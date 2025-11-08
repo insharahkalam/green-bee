@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { PiPhoneOutgoingFill } from "react-icons/pi";
+import { FiSearch } from "react-icons/fi";
 const Navbar = () => {
     return (
         <>
@@ -40,8 +41,30 @@ const Navbar = () => {
 <div className='w-100 flex justify-between bg-red-100 h-[70px] mt-7 pt-1'>
     <button className='rounded-full text-white bg-[#0D7A52] h-[60px] tracking-wide w-[280px] text-2xl flex justify-start px-4 items-center gap-8 text-center'><i className="fa-solid fa-xmark fa-2xs text-[#e6b400]"></i> Categories</button>
 <div className='rounded-full text-white bg-[#0D7A52] h-[65px] tracking-wide w-[890px] text-2xl flex justify-between px-2 items-center'> 
-<input className='rounded-full text-white text-[16px] bg-[#ffffff] h-[50px] w-[580px]  px-4 tracking-wider items-center ' type="text" placeholder='Enter Your Keyword' id="" />
-<button className='rounded-full text-black bg-[#ffffff] h-[50px] tracking-wide w-[270px] px-2 text-2xl flex justify-start items-center'>Contact</button>
+<div className="relative w-[580px]">
+  <input
+    className="rounded-full text-[#0D7A52] outline-none text-[16px] bg-[#ffffff] h-[50px] w-full uppercase px-4 pr-12 tracking-wider"
+    type="text"
+    placeholder="Enter Your Keyword...."
+  />
+  <button
+    className="w-[45px] h-[45px] flex justify-center items-center rounded-full bg-[#F09300] absolute right-[3px] top-1/2 -translate-y-1/2"
+  >
+    <FiSearch className="text-white text-[20px]" />
+  </button>
+</div>
+
+
+
+<button className='rounded-full text-black bg-[#ffffff] h-[50px] tracking-wide w-[270px] ps-2 flex gap-5 items-center'><PiPhoneOutgoingFill className='text-[#0D7A52]' size={40} />
+<div className='flex justify-between items-center w-full pe-2'>
+<div className='leading-tight'>
+    <p className='text-[16px] tracking-wider text-gray-400 text-start'>Call us now:</p>
+    <p className='text-[16px] text-[#0D7A52] font-extrabold '>031-5338-5735</p>
+</div>
+<i class="fa-solid text-[#0D7A52] fa-caret-down fa-xs text-end"></i>
+</div>
+</button>
 </div>
 </div>
 
