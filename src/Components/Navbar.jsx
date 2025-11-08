@@ -4,19 +4,19 @@ const Navbar = () => {
     return (
         <>
 
-
-            <div className='mx-10 grid grid-cols-12 gap-[35px] mt-10'>
+<section className='px-10'>
+            <div className=' grid grid-cols-12 gap-[35px] mt-10'>
                 <div className='col-span-3'>
                     <a href="/"> <img src="https://greenbee-2.myshopify.com/cdn/shop/files/logo_200x.png?v=1613769207" alt="" /></a>
                 </div>
 
                 
                 <ul className='col-span-7 flex gap-10 mt-3'>
-                    <li className='text-sm'>HOME  <i className="fa-solid fa-angle-down fa-2xs" style={{ color: "gray" }}></i></li>
-                    <li className='text-sm'>PRODUCT  <i className="fa-solid fa-angle-down fa-2xs" style={{ color: "gray" }}></i></li>
-                    <li className='text-sm'>CATEGORIES  <i className="fa-solid fa-angle-down fa-2xs" style={{ color: "gray" }}></i></li>
-                    <li className='text-sm'>PAGES  <i className="fa-solid fa-angle-down fa-2xs" style={{ color: "gray" }}></i></li>
-                    <li className='text-sm'>BLOG  <i className="fa-solid fa-angle-down fa-2xs" style={{ color: "gray" }}></i></li>
+                    <li className='text-[16px] cursor-pointer'>HOME  <i className="fa-solid fa-angle-down fa-2xs" style={{ color: "gray" }}></i></li>
+                    <li className='text-[16px] cursor-pointer'>PRODUCT  <i className="fa-solid fa-angle-down fa-2xs" style={{ color: "gray" }}></i></li>
+                    <li className='text-[16px] cursor-pointer'>CATEGORIES  <i className="fa-solid fa-angle-down fa-2xs" style={{ color: "gray" }}></i></li>
+                    <li className='text-[16px] cursor-pointer'>PAGES  <i className="fa-solid fa-angle-down fa-2xs" style={{ color: "gray" }}></i></li>
+                    <li className='text-[16px] cursor-pointer'>BLOG  <i className="fa-solid fa-angle-down fa-2xs" style={{ color: "gray" }}></i></li>
                 </ul>
 
 
@@ -31,17 +31,21 @@ const Navbar = () => {
                             0
                         </span>
                     </div>
-<div className='mt-3 mx-4 whitespace-nowrap text-[#0D7A52]'>
+<div className='mt-3 mx-4 whitespace-nowrap text-[16px] cursor-pointer text-[#0D7A52]'>
   My Cart
 </div>
                 </div>
-
-
-
-
-
             </div>
 
+<div className='w-100 flex justify-between bg-red-100 h-[70px] mt-7 pt-1'>
+    <button className='rounded-full text-white bg-[#0D7A52] h-[60px] tracking-wide w-[280px] text-2xl flex justify-start px-4 items-center gap-8 text-center'><i className="fa-solid fa-xmark fa-2xs text-[#e6b400]"></i> Categories</button>
+<div className='rounded-full text-white bg-[#0D7A52] h-[65px] tracking-wide w-[890px] text-2xl flex justify-between px-2 items-center'> 
+<input className='rounded-full text-white text-[16px] bg-[#ffffff] h-[50px] w-[580px]  px-4 tracking-wider items-center ' type="text" placeholder='Enter Your Keyword' id="" />
+<button className='rounded-full text-black bg-[#ffffff] h-[50px] tracking-wide w-[270px] px-2 text-2xl flex justify-start items-center'>Contact</button>
+</div>
+</div>
+
+</section>
         </>
     )
 }
