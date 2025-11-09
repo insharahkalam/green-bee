@@ -38,7 +38,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-<div className='w-100 flex justify-between bg-red-100 h-[70px] mt-7 pt-1'>
+<div className='w-100 flex justify-between h-[70px] mt-5 pt-1'>
     <button className='rounded-full text-white bg-[#0D7A52] h-[60px] tracking-wide w-[280px] text-2xl flex justify-start px-4 items-center gap-8 text-center'><i className="fa-solid fa-xmark fa-2xs text-[#e6b400]"></i> Categories</button>
 <div className='rounded-full text-white bg-[#0D7A52] h-[65px] tracking-wide w-[890px] text-2xl flex justify-between px-2 items-center'> 
 <div className="relative w-[580px]">
