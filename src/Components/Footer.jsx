@@ -1,5 +1,10 @@
 import React from 'react'
 import { TfiEmail } from "react-icons/tfi";
+import { FiPhoneCall } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
+import { SlLocationPin } from "react-icons/sl";
+import { CiClock2 } from "react-icons/ci";
+
 
 const Footer = () => {
     return (
@@ -30,22 +35,48 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className='pt-6'>
                     <div className='flex'>
-                        <div className='w-[300px] bg-red-300'><p>CUSTOMER SERVICE</p>
-                            <p>Contact us</p>
-                            <p>Help and advice</p>
-                            <p>Shipping & Returns</p>
-                            <p>Terms and conditions</p>
-                            <p>Refund Policy</p>
+                        <div className='w-[300px] py-2'><p className='text-xl'>CUSTOMER SERVICE</p>
+                            <p className='mt-4 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>Contact us</p>
+                            <p className='mt-2 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>Help and advice</p>
+                            <p className='mt-2 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>Shipping & Returns</p>
+                            <p className='mt-2 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>Terms and conditions</p>
+                            <p className='mt-2 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>Refund Policy</p>
                         </div>
-                        <div className='w-[300px] bg-red-200'><p>INFORMATION</p></div>
-                        <div className='w-[300px] bg-red-400'><p>About Us</p></div>
-                        <div className='w-[300px] bg-red-600'><p>Contact us</p></div>
+
+                        <div className='w-[300px] bg-white'><p className='text-xl'>INFORMATION</p>
+                            <p className='mt-4 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>About Us</p>
+                            <p className='mt-2 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>Testimonials</p>
+                            <p className='mt-2 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>My Account</p>
+                            <p className='mt-2 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>Payments & Returns</p>
+                            <p className='mt-2 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>View Catalogues Online</p>
+                        </div>
+                        <div className='w-[300px]'><p className='text-xl'>About Us</p>
+                            <p className='mt-4 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>Who We Are ?</p>
+                            <p className='mt-2 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>Corporate Responsibility</p>
+                            <p className='mt-2 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>California Laws</p>
+                            <p className='mt-2 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>Careers</p>
+                            <p className='mt-2 text-gray-500 hover:text-[#0D7A52] cursor-pointer'>Privacy Policy</p>
+                        </div>
+                        <div className='w-[300px]'><p className='text-xl'>Contact us</p>
+                            <p className='mt-4 flex items-center text-gray-500 gap-3'><FiPhoneCall /> (+612) 2531 5600</p>
+                            <p className='mt-2 flex items-center gap-3 text-gray-500'><HiOutlineMail size={20} />support@domain.com</p>
+                            <p className='mt-2 flex items-center gap-3 text-gray-500'><SlLocationPin /> PO Box 1622 Vissaosang Street West</p>
+                            <p className='mt-2 flex items-center gap-3 text-gray-500'><CiClock2 /> Opening Hours : 8.00AM - 21.00AM</p>
+                        </div>
                     </div>
                 </div>
 
+<hr className='my-2' />
 
+<div className='flex justify-between items-center'>
+<p>Copyright © 2020 Vinovathemes. All rights reserved.</p>
+<div>
+<img src="https://greenbee-2.myshopify.com/cdn/shop/files/payment_500x.png?v=1613769392" alt="" />
+
+</div>
+</div>
 
 
 
