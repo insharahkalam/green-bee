@@ -3,7 +3,7 @@ import React from 'react'
 const Categogies = () => {
   return (
     <>
-      <div className='w-[320px] border shadow-xl rounded-2xl'>
+      <div className='w-[320px]  border shadow-xl rounded-2xl'>
             <div className='flex justify-between items-start gap-3  px-4 py-2.5 rounded-t-2xl hover:bg-sky-50'>
               <img src="https://greenbee-2.myshopify.com/cdn/shop/files/v-1_50x.png?v=1613769214" alt="" />
               <div>
