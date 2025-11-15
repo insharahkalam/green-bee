@@ -1,4 +1,7 @@
 import React from 'react'
+import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { CiSearch } from "react-icons/ci";
 
 const OurProducts = () => {
     return (
@@ -45,50 +48,127 @@ const OurProducts = () => {
                 <hr className='mt-3' />
 
                 <div className='mt-10 flex justify-between'>
-                    {/* <div className='w-[32%] h-[175px] flex justify-center items-center gap-20 shadow-gray-300 rounded-xl shadow-lg'>
-                        <div>
-                            <img width={200} height={160} src="https://greenbee-2.myshopify.com/cdn/shop/products/24_df77bf77-a00c-4fda-9906-e1525b566733_370x.jpg?v=1610525619" alt="" />
-                        </div>
-                        <div>
-                            <p>Ziamond Ralo Stud Farrings</p>
-                            <p className='font-bold mt-2'>876.77</p>
-                        </div>
-                    </div> */}
 
-                    <div className="group w-[32%] h-[175px] flex justify-center items-center gap-20 shadow-gray-300 rounded-xl shadow-lg cursor-pointer">
+                    <div className="group w-[32%] h-[175px] flex justify-center items-center gap-10 shadow-gray-300 rounded-xl shadow-lg cursor-pointer p-4">
 
-                        <div className="relative w-[200px] h-[160px]">
+                        {/* Images */}
+                        <div className="relative w-[200px] h-[160px] overflow-hidden">
+
                             {/* Default Image */}
                             <img
-                                src="https://greenbee-2.myshopify.com/cdn/shop/products/24_df77bf77-a00c-4fda-9906-e1525b566733_370x.jpg?v=1610525619"
-                                className="w-full h-full object-cover absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                                src="https://greenbee-2.myshopify.com/cdn/shop/products/20_6512ebbc-8084-4fea-890a-1e13b41465bd_370x.jpg?v=1610525619"
+                                className="w-full h-full object-cover absolute inset-0 
+                       transition-all duration-500 
+                       transform translate-y-0 opacity-100 
+                       group-hover:-translate-y-6 group-hover:opacity-0"
                             />
 
-                            {/* Hover Image (change this URL to your hover pic) */}
+                            {/* Hover Image (comes from bottom) */}
                             <img
-                                src="https://greenbee-2.myshopify.com/cdn/shop/products/31_544eba9c-a687-4a2a-8eb8-ca9c920b4101_370x.jpg?v=1610525661"
-                                className="w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                                src="https://greenbee-2.myshopify.com/cdn/shop/products/24_df77bf77-a00c-4fda-9906-e1525b566733_370x.jpg?v=1610525619"
+                                className="w-full h-full object-cover absolute inset-0 
+                       transition-all duration-500 
+                       transform translate-y-6 opacity-0 
+                       group-hover:translate-y-0 group-hover:opacity-100"
                             />
                         </div>
 
-                        <div>
-                            <p>Ziamond Ralo Stud Farrings</p>
-                            <p className="font-bold mt-2">876.77</p>
+                        {/* Text + Buttons */}
+                        <div className="relative overflow-hidden">
+
+                            {/* Default Text */}
+                            <p className="transition-all duration-500 transform translate-y-3 opacity-100 group-hover:opacity-0 group-hover:-translate-y-3">
+                                Ziamond Ralo Stud Farrings
+                            </p>
+
+                            {/* Hover Text */}
+                            <p className="absolute top-0 left-0 hover:text-green-500 w-full transition-all duration-500 transform translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+                                Ziamond Ralo Stud Farrings
+                            </p>
+
+                            {/* Price */}
+                            <p className="font-extrabold mt-2 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0 ">
+                                876.77
+                            </p>
+
+                            {/* Buttons */}
+                            <div className="opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 flex gap-2 mt-3">
+                                <button className="w-8 h-8 hover:bg-green-700 bg-gray-200 text-white rounded-full flex justify-center items-center"><HiOutlineShoppingBag className='text-gray-700 hover:text-white' size={20} /></button>
+                                <button className="w-8 h-8 hover:bg-green-700 bg-gray-200 text-white rounded-full flex justify-center items-center"><IoMdHeartEmpty className='text-gray-700 hover:text-white' size={20} /></button>
+                                <button className="w-8 h-8 hover:bg-green-700 bg-gray-100 text-white rounded-full flex justify-center items-center"><CiSearch className='text-gray-700 hover:text-white' size={20} /></button>
+                            </div>
                         </div>
 
                     </div>
 
 
 
-                    <div className='w-[32%] h-[175px] flex justify-center items-center gap-20 shadow-gray-300 rounded-xl shadow-lg'>
-                        <div>
-                            <img width={200} height={160} src="https://greenbee-2.myshopify.com/cdn/shop/products/24_df77bf77-a00c-4fda-9906-e1525b566733_370x.jpg?v=1610525619" alt="" />
+
+  <div className="group w-[32%] h-[175px] flex justify-center items-center gap-10 shadow-gray-300 rounded-xl shadow-lg cursor-pointer p-4">
+
+                        {/* Images */}
+                        <div className="relative w-[200px] h-[160px] overflow-hidden">
+
+                            {/* Default Image */}
+                            <img
+                                src="https://greenbee-2.myshopify.com/cdn/shop/products/20_6512ebbc-8084-4fea-890a-1e13b41465bd_370x.jpg?v=1610525619"
+                                className="w-full h-full object-cover absolute inset-0 
+                       transition-all duration-500 
+                       transform translate-y-0 opacity-100 
+                       group-hover:-translate-y-6 group-hover:opacity-0"
+                            />
+
+                            {/* Hover Image (comes from bottom) */}
+                            <img
+                                src="https://greenbee-2.myshopify.com/cdn/shop/products/24_df77bf77-a00c-4fda-9906-e1525b566733_370x.jpg?v=1610525619"
+                                className="w-full h-full object-cover absolute inset-0 
+                       transition-all duration-500 
+                       transform translate-y-6 opacity-0 
+                       group-hover:translate-y-0 group-hover:opacity-100"
+                            />
                         </div>
-                        <div>
-                            <p>Ziamond Ralo Stud Farrings</p>
-                            <p className='font-bold mt-2'>876.77</p>
+
+                        {/* Text + Buttons */}
+                        <div className="relative overflow-hidden">
+
+                            {/* Default Text */}
+                            <p className="transition-all duration-500 transform translate-y-3 opacity-100 group-hover:opacity-0 group-hover:-translate-y-3">
+                                Ziamond Ralo Stud Farrings
+                            </p>
+
+                            {/* Hover Text */}
+                            <p className="absolute top-0 left-0 hover:text-green-500 w-full transition-all duration-500 transform translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+                                Ziamond Ralo Stud Farrings
+                            </p>
+
+                            {/* Price */}
+                            <p className="font-extrabold mt-2 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0 ">
+                                876.77
+                            </p>
+
+                            {/* Buttons */}
+                            <div className="opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 flex gap-2 mt-3">
+                                <button className="w-8 h-8 hover:bg-green-700 bg-gray-200 text-white rounded-full flex justify-center items-center"><HiOutlineShoppingBag className='text-gray-700 hover:text-white' size={20} /></button>
+                                <button className="w-8 h-8 hover:bg-green-700 bg-gray-200 text-white rounded-full flex justify-center items-center"><IoMdHeartEmpty className='text-gray-700 hover:text-white' size={20} /></button>
+                                <button className="w-8 h-8 hover:bg-green-700 bg-gray-100 text-white rounded-full flex justify-center items-center"><CiSearch className='text-gray-700 hover:text-white' size={20} /></button>
+                            </div>
                         </div>
+
                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                     <div className='w-[32%] h-[175px] flex justify-center items-center gap-20 shadow-gray-300 rounded-xl shadow-lg'>
                         <div>
