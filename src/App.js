@@ -1,6 +1,7 @@
 import './App.css';
 import BestFood from './Components/BestFood';
 import CardsSection from './Components/CardsSection';
+import Deals from './Components/Deals';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import OurProducts from './Components/OurProducts';
@@ -15,6 +16,7 @@ function App() {
       <CardsSection />
       <BestFood />
       <OurProducts />
+      <Deals />
       <Footer />
 
     </>
