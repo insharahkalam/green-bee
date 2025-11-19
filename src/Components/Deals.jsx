@@ -7,14 +7,12 @@ import { RiShoppingBasketFill } from "react-icons/ri";
 const Deals = () => {
     return (
         <>
-            <section className='px-10 py-20 bg-[#F7F6F2]'>
+            <section className='px-10 pt-20 pb-10 bg-[#F7F6F2]'>
 
                 <div className='text-center'>
                     <h1 className='text-4xl'>Flash Deals</h1>
                     <p className='text-sm text-gray-500 mt-3'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
                 </div>
-
-
 
 
 
@@ -85,7 +83,7 @@ const Deals = () => {
                                         <p className='text-sm'>Lorem ipsum dolor sit amet consectetur  Aenean commodo ligula eget dolor Aenean massa...</p>
 
                                         <div className=" flex items-center gap-2 mt-3">
-                                            <button className="w-[160px] py-3 hover:bg-green-700 transition-all duration-500 bg-gray-200 text-black hover:text-white rounded-full flex justify-center gap-2 items-center"><span className='text-sm'>ADD TO CART</span><RiShoppingBasketFill className='pb-1' size={20} /></button>
+                                            <button className="w-[160px] py-3 hover:bg-green-700 transition-all duration-500 bg-gray-200 text-black hover:text-white rounded-full flex justify-center gap-2 items-center text-sm">Select Options</button>
                                             <button className="w-10 h-10 hover:bg-green-700 bg-gray-200 text-white rounded-full flex justify-center items-center"><IoMdHeartEmpty className='text-gray-700 hover:text-white' size={20} /></button>
                                             <button className="w-10 h-10 hover:bg-green-700 bg-gray-100 text-white rounded-full flex justify-center items-center"><CiSearch className='text-gray-700 hover:text-white' size={20} /></button>
                                         </div>
@@ -133,7 +131,7 @@ const Deals = () => {
                                         <p className='text-sm'>Lorem ipsum dolor sit amet consectetur  Aenean commodo ligula eget dolor Aenean massa...</p>
 
                                         <div className=" flex items-center gap-2 mt-3">
-                                            <button className="w-[160px] py-3 hover:bg-green-700 transition-all duration-500 bg-gray-200 text-black hover:text-white rounded-full flex justify-center gap-2 items-center"><span className='text-sm'>ADD TO CART</span><RiShoppingBasketFill className='pb-1' size={20} /></button>
+                                             <button className="w-[160px] py-3 hover:bg-green-700 transition-all duration-500 bg-gray-200 text-black hover:text-white rounded-full flex justify-center gap-2 items-center text-sm">Select Options</button>
                                             <button className="w-10 h-10 hover:bg-green-700 bg-gray-200 text-white rounded-full flex justify-center items-center"><IoMdHeartEmpty className='text-gray-700 hover:text-white' size={20} /></button>
                                             <button className="w-10 h-10 hover:bg-green-700 bg-gray-100 text-white rounded-full flex justify-center items-center"><CiSearch className='text-gray-700 hover:text-white' size={20} /></button>
                                         </div>
