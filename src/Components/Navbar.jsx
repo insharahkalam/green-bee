@@ -18,10 +18,10 @@ const Navbar = () => {
 
                             <div className='absolute left-0 top-full bg-white invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50 w-60 py-2 px-1'>
                                 <ul>
-                                    <li class="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Homepage 1</li>
-                                    <li class="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Homepage 2</li>
-                                    <li class="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Homepage 3</li>
-                                    <li class="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Homepage 4</li>
+                                    <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Homepage 1</li>
+                                    <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Homepage 2</li>
+                                    <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Homepage 3</li>
+                                    <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Homepage 4</li>
 
                                 </ul>
                             </div>
