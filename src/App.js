@@ -3,6 +3,7 @@ import BestFood from './Components/BestFood';
 import CardsSection from './Components/CardsSection';
 import Deals from './Components/Deals';
 import Footer from './Components/Footer';
+import LatestPost from './Components/LatestPost';
 import Navbar from './Components/Navbar';
 import NewArrivals from './Components/NewArrivals';
 import OurProducts from './Components/OurProducts';
@@ -18,7 +19,8 @@ function App() {
       <BestFood />
       <OurProducts />
       <Deals />
-     <NewArrivals /> 
+     <NewArrivals />
+     <LatestPost /> 
       <Footer />
 
     </>
