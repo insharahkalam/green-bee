@@ -1,6 +1,7 @@
 import './App.css';
 import BestFood from './Components/BestFood';
 import CardsSection from './Components/CardsSection';
+import CompanyName from './Components/CompanyName';
 import Deals from './Components/Deals';
 import Footer from './Components/Footer';
 import LatestPost from './Components/LatestPost';
@@ -21,6 +22,7 @@ function App() {
       <Deals />
      <NewArrivals />
      <LatestPost /> 
+     <CompanyName />
       <Footer />
 
     </>
