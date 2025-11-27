@@ -6,9 +6,9 @@ const Slider = () => {
     <>
       <section className='px-10 my-8'>
         <div className='flex gap-8'>
-        <Categogies />
-
-
+       <div className='md:visible hidden'>
+         <Categogies />
+       </div>
 
           <div className='w-[1000px]'>
 

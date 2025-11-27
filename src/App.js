@@ -14,16 +14,16 @@ function App() {
   return (
     <>
 
-      <Navbar />
+      {/* <Navbar /> */}
       <Slider />
-      <CardsSection />
+      {/* <CardsSection />
       <BestFood />
-      <OurProducts />
-      <Deals />
-     <NewArrivals />
+      <OurProducts /> */}
+      {/* <Deals /> remaing responsiveness */}
+     {/* <NewArrivals />
      <LatestPost /> 
      <CompanyName />
-      <Footer />
+      <Footer /> */}
 
     </>
   );

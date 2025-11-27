@@ -1,5 +1,4 @@
 import React from 'react'
-// import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
 import { RiShoppingBasketFill } from "react-icons/ri";
@@ -343,3 +342,5 @@ const Deals = () => {
 }
 
 export default Deals
+
+
