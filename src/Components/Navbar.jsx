@@ -6,6 +6,7 @@ import { BiMenuAltLeft } from "react-icons/bi";
 import { HiOutlineMenu } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
 import { IoMdArrowDropright } from "react-icons/io";
+import { IoSettingsOutline } from "react-icons/io5";
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
                     <ul className="col-span-7 flex gap-10 mt-3">
                         <li className="text-[16px] cursor-pointer group relative">
                             HOME <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i>
-                            <div className="absolute left-0 top-full bg-white invisible opacity-0 group-hover:opacity-100 group-hover:visible z-50 w-60 py-2 px-1">
+                            <div className="absolute left-0 top-full bg-white invisible opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50 w-60 py-2 px-1">
                                 <ul>
                                     <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Homepage 1</li>
                                     <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Homepage 2</li>
@@ -43,19 +44,66 @@ const Navbar = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li className="text-[16px] cursor-pointer">PRODUCT <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i></li>
-                        <li className="text-[16px] cursor-pointer">CATEGORIES <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i></li>
-                        <li className="text-[16px] cursor-pointer">PAGES <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i></li>
-                        <li className="text-[16px] cursor-pointer">BLOG <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i></li>
+                        <li className="text-[16px] cursor-pointer group relative">PRODUCT <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i>
+                            <div className="absolute left-0 top-full bg-white invisible opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50 w-60 py-2 px-1">
+                                <ul>
+                                    <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Product Detail Page</li>
+                                    <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Color Variant Style</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li className="text-[16px] cursor-pointer group relative">CATEGORIES <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i>
+                            <div className="absolute left-0 top-full bg-white invisible opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50 w-60 py-2 px-1">
+                                <ul>
+                                    <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Without Sidebar Layout</li>
+                                    <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Left Sidebar Layout</li>
+                                    <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Right Sidebar Layout</li>
+                                    <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Full Width Layout</li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li className="text-[16px] cursor-pointer group relative">PAGES <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i>
+                            <div className="absolute left-0 top-full bg-white invisible opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50 w-60 py-2 px-1">
+                                <ul>
+                                    <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">About Us</li>
+                                    <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Contact Us</li>
+                                    <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">FAQs Page</li>
+                                    <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Team and Services</li>
+                                    <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Privacy Policy</li>
+                                    <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Testimonial Page</li>
+                                    <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Our Team</li>
+                                    <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">404 Error Page</li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li className="text-[16px] cursor-pointer group relative">BLOG <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i>
+                            <div className="absolute left-0 top-full bg-white invisible opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50 w-60 py-2 px-1">
+                                <ul>
+                                    <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Blog Grid</li>
+                                    <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Blog List</li>
+                                    <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Blog Details</li>
+                                    <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Blog Categories</li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
 
                     <div className="flex gap-2">
                         <div className="bg-[#0D7A52] hover:bg-green-500 p-3 rounded-full flex items-center justify-center">
-                            <FaShoppingBasket className='text-white size-5' />
+                            <IoSettingsOutline className='text-white size-5' />
                         </div>
-                        <div className='mt-3 mx-4 whitespace-nowrap text-[16px] cursor-pointer text-[#0D7A52]'>
+                        <div className="bg-[#0D7A52] hover:bg-green-500 p-3 rounded-full flex items-center justify-center">
+                            <FaShoppingBasket className='text-white size-5' />
+
+                        </div>
+
+                        <div className='mt-3 whitespace-nowrap text-[16px] cursor-pointer text-[#0D7A52]'>
                             My Cart
                         </div>
+
+
                     </div>
                 </div>
 
