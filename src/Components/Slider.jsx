@@ -28,7 +28,7 @@ const Slider = () => {
                 {/* SLIDE 1 */}
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                    src="https://greenbee-2.myshopify.com/cdn/shop/files/s-1_1920x.jpg?v=1613769353"
+                    src="/images/slider1.Webp"
                     className="absolute w-full h-full object-cover rounded-2xl"
                     alt=""
                   />
@@ -37,7 +37,7 @@ const Slider = () => {
                 {/* SLIDE 2 */}
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                    src="https://greenbee-2.myshopify.com/cdn/shop/files/s-2_1920x.jpg?v=1613769353"
+                    src="/images/slider2.Webp"
                     className="absolute w-full h-full object-cover rounded-2xl"
                     alt=""
                   />
@@ -46,7 +46,7 @@ const Slider = () => {
                 {/* SLIDE 3 */}
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                    src="https://greenbee-2.myshopify.com/cdn/shop/files/s-3_1920x.jpg?v=1613769353"
+                    src="/images/slider3.Webp"
                     className="absolute w-full h-full object-cover rounded-2xl"
                     alt=""
                   />
