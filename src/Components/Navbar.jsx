@@ -147,7 +147,7 @@ const Navbar = () => {
                 </div>
 
                 {/* <!-- drawer component --> */}
-                <div id="drawer-navigation" className="fixed top-0 left-0 z-40 w-[300px] h-screen overflow-y-auto transition-transform -translate-x-full bg-gray-100 border-e border-default" tabIndex="-1" aria-labelledby="drawer-navigation-label">
+                <div id="drawer-navigation" className="fixed top-0 left-0 z-50 w-[300px] h-screen overflow-y-auto transition-transform -translate-x-full bg-gray-100 border-e border-default" tabIndex="-1" aria-labelledby="drawer-navigation-label">
                     <div className="py-5 overflow-y-auto">
                         <ul className="space-y-2 font-medium">
 
