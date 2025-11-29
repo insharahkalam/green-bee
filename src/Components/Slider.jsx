@@ -26,7 +26,7 @@ const Slider = () => {
                   overflow-hidden rounded-2xl">
 
                 {/* SLIDE 1 */}
-                <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                <div className=" duration-700 ease-in-out" data-carousel-item>
                   <img
                     src="images/slider1.Webp"
                     className="absolute w-full h-full object-cover rounded-2xl"
@@ -35,7 +35,7 @@ const Slider = () => {
                 </div>
 
                 {/* SLIDE 2 */}
-                <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                <div className=" duration-700 ease-in-out" data-carousel-item>
                   <img
                     src="images/slider2.Webp"
                     className="absolute w-full h-full object-cover rounded-2xl"
@@ -44,7 +44,7 @@ const Slider = () => {
                 </div>
 
                 {/* SLIDE 3 */}
-                <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                <div className=" duration-700 ease-in-out" data-carousel-item>
                   <img
                     src="images/slider3.Webp"
                     className="absolute w-full h-full object-cover rounded-2xl"
