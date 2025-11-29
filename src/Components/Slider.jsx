@@ -28,7 +28,7 @@ const Slider = () => {
                 {/* SLIDE 1 */}
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <img
-                    src="images/stawberry.png"
+                    src="images/slider1.Webp"
                     className="absolute w-full h-full object-cover rounded-2xl"
                     alt=""
                   />
