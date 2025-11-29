@@ -2,7 +2,6 @@
   "name": "greenbee-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://insharahkalam.github.io/green-bee",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "@testing-library/dom": "^10.4.1",
