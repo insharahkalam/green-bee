@@ -141,7 +141,7 @@ const Navbar = () => {
 
                 {/* <!-- drawer init and show --> */}
                 <div>
-                    <button type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+                    <button className='z-50' type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
                         <BiMenuAltLeft className='mt-2 text-2xl' />
                     </button>
                 </div>

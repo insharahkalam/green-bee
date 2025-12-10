@@ -57,7 +57,7 @@ const NewArrivals = () => {
                 </div>
 
                 <div className='grid gap-4 my-5 justify-center
-                grid-cols-2      /* default: mobile */
+                grid-cols-2     /* default: mobile */
                 sm:grid-cols-2   /* small screens: 2 cards */
                 md:grid-cols-3   /* medium screens: 3 cards */
                 lg:grid-cols-5   /* large screens: 4 cards */'>
