@@ -1,4 +1,5 @@
 import './App.css';
+import 'flowbite';
 import BestFood from './Components/BestFood';
 import CardsSection from './Components/CardsSection';
 import CompanyName from './Components/CompanyName';
@@ -20,9 +21,9 @@ function App() {
       <BestFood />
       <OurProducts />
       {/* <Deals /> remaing responsiveness */}
-     <NewArrivals />
-     <LatestPost /> 
-     <CompanyName />
+      <NewArrivals />
+      <LatestPost />
+      <CompanyName />
       <Footer />
 
     </>
