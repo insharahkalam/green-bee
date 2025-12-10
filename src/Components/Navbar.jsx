@@ -138,6 +138,20 @@ const Navbar = () => {
                 </div>
             </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             {/* Small Navbar - Mobile Screens */}
             <div className='px-6 flex items-center justify-between bg-white shadow-lg p-2 md:hidden'>
 

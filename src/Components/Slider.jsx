@@ -28,7 +28,7 @@ const Slider = () => {
                 {/* SLIDE 1 */}
                 <div className=" duration-700 ease-in-out" data-carousel-item>
                   <img
-                    src="images/slider1.Webp"
+                  src="/images/slider1.webp"
                     className="absolute w-full h-full object-cover rounded-2xl"
                     alt=""
                   />
@@ -37,7 +37,7 @@ const Slider = () => {
                 {/* SLIDE 2 */}
                 <div className=" duration-700 ease-in-out" data-carousel-item>
                   <img
-                    src="images/slider2.Webp"
+                    src="/images/slider2.Webp"
                     className="absolute w-full h-full object-cover rounded-2xl"
                     alt=""
                   />
@@ -46,7 +46,7 @@ const Slider = () => {
                 {/* SLIDE 3 */}
                 <div className=" duration-700 ease-in-out" data-carousel-item>
                   <img
-                    src="images/slider3.Webp"
+                    src="/images/slider3.Webp"
                     className="absolute w-full h-full object-cover rounded-2xl"
                     alt=""
                   />
