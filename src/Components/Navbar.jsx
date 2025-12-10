@@ -146,7 +146,6 @@ const Navbar = () => {
                     <button onClick={() => setOpenDrawer(true)}>
                         <BiMenuAltLeft className="mt-2 text-2xl" />
                     </button>
-
                 </div>
 
                 {openDrawer && (
@@ -156,21 +155,10 @@ const Navbar = () => {
                     ></div>
                 )}
 
-
-
-
                 {/* <!-- drawer component --> */}
-                <div
-                    className={`fixed top-0 left-0 z-50 w-[300px] h-screen overflow-y-auto bg-gray-100 border-e border-default transition-transform duration-300
-  ${openDrawer ? "translate-x-0" : "-translate-x-full"}`}
+                <div className={`fixed top-0 left-0 z-50 w-[300px] h-screen overflow-y-auto bg-gray-100 border-e border-default transition-transform duration-300
+                    ${openDrawer ? "translate-x-0" : "-translate-x-full"}`}
                 >
-                    <button
-                        className="p-3 text-xl"
-                        onClick={() => setOpenDrawer(false)}
-                    >
-                        ✖
-                    </button>
-
 
                     <div className="py-5 overflow-y-auto">
                         <ul className="space-y-2 font-medium">
