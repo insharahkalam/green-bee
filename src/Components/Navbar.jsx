@@ -20,6 +20,8 @@ const Navbar = () => {
     const [openFruits, setOpenFruits] = useState(false);
     const [openVegetables, setOpenVegetables] = useState(false);
     const [openFreshJuice, setOpenFreshJuice] = useState(false);
+    const [openDrawer, setOpenDrawer] = useState(false);
+
 
     return (
         <>
@@ -141,13 +143,35 @@ const Navbar = () => {
 
                 {/* <!-- drawer init and show --> */}
                 <div>
-                    <button className='z-50' type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
-                        <BiMenuAltLeft className='mt-2 text-2xl' />
+                    <button onClick={() => setOpenDrawer(true)}>
+                        <BiMenuAltLeft className="mt-2 text-2xl" />
                     </button>
+
                 </div>
 
+                {openDrawer && (
+                    <div
+                        onClick={() => setOpenDrawer(false)}
+                        className="fixed inset-0 bg-black/40 z-40"
+                    ></div>
+                )}
+
+
+
+
                 {/* <!-- drawer component --> */}
-                <div id="drawer-navigation" className="fixed top-0 left-0 z-50 w-[300px] h-screen overflow-y-auto transition-transform -translate-x-full bg-gray-100 border-e border-default" tabIndex="-1" aria-labelledby="drawer-navigation-label">
+                <div
+                    className={`fixed top-0 left-0 z-50 w-[300px] h-screen overflow-y-auto bg-gray-100 border-e border-default transition-transform duration-300
+  ${openDrawer ? "translate-x-0" : "-translate-x-full"}`}
+                >
+                    <button
+                        className="p-3 text-xl"
+                        onClick={() => setOpenDrawer(false)}
+                    >
+                        ✖
+                    </button>
+
+
                     <div className="py-5 overflow-y-auto">
                         <ul className="space-y-2 font-medium">
 
