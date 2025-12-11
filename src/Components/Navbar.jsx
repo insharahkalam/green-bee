@@ -8,6 +8,7 @@ import { IoIosClose } from "react-icons/io";
 import { IoMdArrowDropright } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
 import { useState } from 'react';
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navbar = () => {
 
@@ -22,7 +23,6 @@ const Navbar = () => {
     const [openFreshJuice, setOpenFreshJuice] = useState(false);
     const [openDrawer, setOpenDrawer] = useState(false);
 
-
     return (
         <>
             {/* Full Navbar - Large Screens */}
@@ -34,9 +34,9 @@ const Navbar = () => {
                             alt="" />
                     </div>
 
-                    <ul className="col-span-7 flex gap-10 mt-3">
-                        <li className="text-[16px] cursor-pointer group relative">
-                            HOME <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i>
+                    <ul className="hidden md:flex col-span-7 items-center gap-5 lg:gap-12 xl:gap-16 2xl:gap-28 mt-3 relative ">
+                        <li className="text-[16px] cursor-pointer 2xl:text-[25px] group relative">
+                            <span className='flex items-center'> HOME <RiArrowDropDownLine className='text-gray-700' size={20} /></span>
                             <div className="absolute left-0 top-full bg-white invisible opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50 w-60 py-2 px-1">
                                 <ul>
                                     <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Homepage 1</li>
@@ -46,7 +46,7 @@ const Navbar = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li className="text-[16px] cursor-pointer group relative">PRODUCT <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i>
+                        <li className="text-[16px] cursor-pointer 2xl:text-[25px] group relative"> <span className='flex items-center'>PRODUCT <RiArrowDropDownLine className='text-gray-700' size={20} /></span>
                             <div className="absolute left-0 top-full bg-white invisible opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50 w-60 py-2 px-1">
                                 <ul>
                                     <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Product Detail Page</li>
@@ -54,7 +54,7 @@ const Navbar = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li className="text-[16px] cursor-pointer group relative">CATEGORIES <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i>
+                        <li className="text-[16px] cursor-pointer 2xl:text-[25px] group relative"> <span className='flex items-center'>CATEGORIES <RiArrowDropDownLine className='text-gray-700' size={20} /></span>
                             <div className="absolute left-0 top-full bg-white invisible opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50 w-60 py-2 px-1">
                                 <ul>
                                     <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Without Sidebar Layout</li>
@@ -65,7 +65,7 @@ const Navbar = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li className="text-[16px] cursor-pointer group relative">PAGES <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i>
+                        <li className="text-[16px] cursor-pointer 2xl:text-[25px] group relative">         <span className='flex items-center'>PAGES <RiArrowDropDownLine className='text-gray-700' size={20} /></span>
                             <div className="absolute left-0 top-full bg-white invisible opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50 w-60 py-2 px-1">
                                 <ul>
                                     <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">About Us</li>
@@ -80,7 +80,7 @@ const Navbar = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li className="text-[16px] cursor-pointer group relative">BLOG <i className="fa-solid fa-angle-down fa-2xs text-gray-400"></i>
+                        <li className="text-[16px] cursor-pointer 2xl:text-[25px] group relative">         <span className='flex items-center'>BLOG <RiArrowDropDownLine className='text-gray-700' size={20} /></span>
                             <div className="absolute left-0 top-full bg-white invisible opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50 w-60 py-2 px-1">
                                 <ul>
                                     <li className="px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200 hover:text-green-700">Blog Grid</li>
@@ -93,7 +93,7 @@ const Navbar = () => {
                     </ul>
 
                     <div className="flex gap-2">
-                        <div className="bg-[#0D7A52] hover:bg-green-500 p-3 rounded-full flex items-center justify-center">
+                        <div className="bg-[#0D7A52] lg:visible hover:bg-green-500 p-3 rounded-full flex items-center justify-center">
                             <IoSettingsOutline className='text-white size-5' />
                         </div>
                         <div className="bg-[#0D7A52] hover:bg-green-500 p-3 rounded-full flex items-center justify-center">
@@ -105,52 +105,59 @@ const Navbar = () => {
                             My Cart
                         </div>
 
-
                     </div>
                 </div>
 
-                <div className='w-100 flex justify-between h-[70px] mt-5 pt-1'>
-                    <button className='rounded-full text-white bg-[#0D7A52] h-[60px] tracking-wide w-[280px] text-2xl flex justify-start px-4 items-center gap-8 text-center'>
-                        <i className="fa-solid fa-xmark fa-2xs text-[#e6b400]"></i> Categories
+                <div className="w-full flex flex-col md:flex-row justify-between h-auto md:h-[70px] mt-5 gap-4">
+
+                    {/* CATEGORIES BUTTON */}
+                    <button className=" rounded-full text-white bg-[#0D7A52] h-[55px] md:h-[58px] 
+                                         w-full md:w-[260px] text-xl md:text-xl flex justify-start px-4 items-center gap-6">
+                        <i className="fa-solid fa-xmark fa-sm text-[#e6b400]"></i>
+                        Categories
                     </button>
-                    <div className='rounded-full text-white bg-[#0D7A52] h-[65px] tracking-wide w-[890px] text-2xl flex justify-between px-2 items-center'>
-                        <div className="relative w-[580px]">
+
+                    {/* SEARCH + CONTACT WRAPPER */}
+                    <div className="rounded-full text-white bg-[#0D7A52] 
+        h-auto md:h-[60px] w-full md:flex-1 flex flex-col md:flex-row justify-between 
+        px-2 items-center gap-3">
+
+                        {/* SEARCH BOX — untouched */}
+                        <div className="relative w-full md:flex-1">
                             <input
-                                className="rounded-full text-[#0D7A52] outline-none text-[16px] bg-[#ffffff] h-[50px] w-full uppercase px-4 pr-12 tracking-wider"
+                                className="rounded-full text-[#0D7A52] outline-none 
+                text-[16px] bg-white h-[50px] w-full uppercase 
+                px-4 pr-12 tracking-wider"
                                 type="text"
                                 placeholder="Enter Your Keyword...."
                             />
-                            <button className="w-[45px] h-[45px] flex justify-center items-center rounded-full bg-[#F09300] absolute right-[3px] top-1/2 -translate-y-1/2">
+                            <button className="w-[45px] h-[45px] flex justify-center items-center rounded-full 
+                bg-[#F09300] absolute right-[3px] top-1/2 -translate-y-1/2">
                                 <FiSearch className="text-white text-[20px]" />
                             </button>
                         </div>
 
-                        <button className='rounded-full text-black bg-[#ffffff] h-[50px] tracking-wide w-[270px] ps-2 flex gap-5 items-center'>
-                            <PiPhoneOutgoingFill className='text-[#0D7A52]' size={40} />
-                            <div className='flex justify-between items-center w-full pe-2'>
-                                <div className='leading-tight'>
-                                    <p className='text-[16px] tracking-wider text-gray-400 text-start'>Call us now:</p>
-                                    <p className='text-[16px] text-[#0D7A52] font-extrabold'>031-5338-5735</p>
-                                </div>
+
+                        {/* CONTACT BOX */}
+                        <button className="
+            rounded-full text-black bg-white 
+            h-[50px] md:h-[50px] 
+            w-full md:w-[240px] 
+            px-2 flex gap-4 items-center text-[14px] md:text-[13px]">
+
+                            <PiPhoneOutgoingFill className="text-[#0D7A52]" size={30} />
+
+                            <div className="leading-tight">
+                                <p className="tracking-wider text-gray-400">Call us now:</p>
+                                <p className="text-[#0D7A52] font-extrabold">031-5338-5735</p>
                             </div>
+
                         </button>
+
                     </div>
                 </div>
+
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             {/* Small Navbar - Mobile Screens */}
             <div className='px-6 flex items-center justify-between bg-white shadow-lg p-2 md:hidden'>

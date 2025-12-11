@@ -58,7 +58,7 @@ const OurProducts = () => {
                                 {/* ICON */}
                                 <img
                                     src={`https://greenbee-2.myshopify.com/cdn/shop/files/icon-${5 + index}_150x.png`}
-                                    className="w-8 h-8 xl:w-20 xl:h-20"
+                                    className="w-8 h-8 2xl:w-20 2xl:h-20"
                                 />
 
                                 {/* TEXT */}
