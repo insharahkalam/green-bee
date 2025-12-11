@@ -41,7 +41,6 @@ const NewArrivals = () => {
             img1: "https://greenbee-2.myshopify.com/cdn/shop/products/15_270x.jpg?v=1610525661",
             img2: "https://greenbee-2.myshopify.com/cdn/shop/products/31_8c763282-1c0d-4fd7-a1b0-98628974d696_270x.jpg?v=1610525734",
         },
-
     ];
 
     return (
@@ -57,10 +56,7 @@ const NewArrivals = () => {
                 </div>
 
                 <div className='grid gap-4 my-5 justify-center
-                grid-cols-2     /* default: mobile */
-                sm:grid-cols-2   /* small screens: 2 cards */
-                md:grid-cols-3   /* medium screens: 3 cards */
-                lg:grid-cols-5   /* large screens: 4 cards */'>
+                grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5'>
                     {products.map((product, index) => (
                         <div key={index} className='hover:shadow-2xl border rounded-xl mt-5'>
                             <div className='group w-full relative'>
@@ -84,7 +80,6 @@ const NewArrivals = () => {
                 <div className='mt-10'>
                     <img className='w-full h-auto' src="https://greenbee-2.myshopify.com/cdn/shop/files/img-6_1920x1920.jpg?v=1613769390" alt="" />
                 </div>
-
             </section>
         </>
     )

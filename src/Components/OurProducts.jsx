@@ -76,10 +76,7 @@ const OurProducts = () => {
 
                 {/* Products Section */}
 
-                <div
-                    className="
-                               grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
-                               gap-6 mt-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
 
                     {productImages.map((img, index) => (
                         <div key={index} className="group w-full h-[200px] sm:h-[220px] 

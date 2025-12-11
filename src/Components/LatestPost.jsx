@@ -45,8 +45,7 @@ const LatestPost = () => {
                                 <img
                                     src={post.img}
                                     className="w-full h-full object-cover transition-all duration-700 transform group-hover:scale-x-110 group-hover:scale-y-110 group-hover:opacity-90"
-                                    alt=""
-                                />
+                                    alt="" />
                             </div>
                             <div className='text-center mt-5'>
                                 <p className='text-gray-800'>{post.title}</p>
@@ -60,7 +59,6 @@ const LatestPost = () => {
                         </div>
                     ))}
                 </div>
-
             </section>
             <hr />
         </>

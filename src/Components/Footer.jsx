@@ -5,7 +5,6 @@ import { HiOutlineMail } from "react-icons/hi";
 import { SlLocationPin } from "react-icons/sl";
 import { CiClock2 } from "react-icons/ci";
 
-
 const Footer = () => {
     return (
         <>
@@ -68,11 +67,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </section>
             <hr className='mt-5' />
 

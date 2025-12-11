@@ -13,11 +13,11 @@ const CompanyName = () => {
     return (
         <>
             <section className='px-5 sm:px-10 py-10'>
-                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-5 items-center justify-items-center'>
+                <div className='grid grid-cols-2  sm:grid-cols-3 md:grid-cols-6 gap-5 items-center justify-items-center'>
                     {logos.map((logo, index) => (
                         <img
                             key={index}
-                            className='cursor-pointer object-contain'
+                            className='cursor-pointer transition-all duration-700 transform hover:scale-x-110 hover:scale-y-110 object-contain'
                             src={logo}
                             alt={`Company ${index + 1}`}
                         />

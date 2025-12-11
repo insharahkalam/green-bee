@@ -4,15 +4,12 @@ const Categogies = () => {
   return (
     <>
       <div className='w-[320px]  border shadow-xl rounded-2xl'>
-
         <div className="relative group flex justify-between items-start gap-3 px-4 py-4 rounded-xl hover:bg-[#e8f3ee] cursor-pointer">
 
           {/* LEFT ICON */}
           <img
             src="https://greenbee-2.myshopify.com/cdn/shop/files/v-1_50x.png?v=1613769214"
-            alt=""
-            className="w-8 h-8"
-          />
+            alt="" className="w-8 h-8" />
 
           {/* TEXT */}
           <div>
@@ -30,7 +27,6 @@ const Categogies = () => {
 
             {/* TOP ROW — 2 COLUMNS */}
             <div className="grid grid-cols-2 gap-4 mb-6">
-
               {/* COLUMN 1: BY CATEGORY */}
               <div>
                 <h3 className="text-green-600 font-semibold text-xl mb-2">BY CATEGORY</h3>
@@ -56,7 +52,6 @@ const Categogies = () => {
                   <li className="hover:text-green-700 cursor-pointer">Apple</li>
                 </ul>
               </div>
-
             </div>
 
             {/* BOTTOM ROW — 2 COLUMNS */}
@@ -79,20 +74,10 @@ const Categogies = () => {
                   alt=""
                   className="w-50 h-auto"
                 />
-
-
               </div>
-
             </div>
-
           </div>
         </div>
-
-
-
-
-
-
         <hr />
 
         <div className='group relative flex justify-between items-start gap-3 px-4 py-2.5 hover:bg-sky-50'>
@@ -181,7 +166,6 @@ const Categogies = () => {
 
               {/* COLUMN 1: BY CATEGORY */}
               <div>
-                
                 <ul className="space-y-2 text-gray-700">
                   <li className="hover:text-green-700 cursor-pointer">Lemonade</li>
                   <li className="hover:text-green-700 cursor-pointer">Orange Juice</li>
@@ -193,15 +177,10 @@ const Categogies = () => {
                   <li className="hover:text-green-700 cursor-pointer">Strawberry Juice</li>
                   <li className="hover:text-green-700 cursor-pointer">White Grape Juice</li>
                 </ul>
-              </div>           
-
+              </div>
             </div>
-
           </div>
-
-
         </div>
-
         <hr />
 
         <div className='flex justify-between items-start gap-3  px-4 py-2.5 hover:bg-sky-50'>
@@ -231,10 +210,7 @@ const Categogies = () => {
             <p className='text-[14px] text-gray-500'>Pork, Beef, Lamb chops, Salmon Chicken, Sausage...</p>
           </div>
         </div>
-
-
       </div>
-
     </>
   )
 }

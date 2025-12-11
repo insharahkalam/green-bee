@@ -61,7 +61,6 @@ const Navbar = () => {
                                     <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Left Sidebar Layout</li>
                                     <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Right Sidebar Layout</li>
                                     <li className="hover:text-green-700 px-4 py-2 cursor-pointer text-gray-400 hover:bg-gray-200">Full Width Layout</li>
-
                                 </ul>
                             </div>
                         </li>
@@ -104,7 +103,6 @@ const Navbar = () => {
                         <div className='mt-3 whitespace-nowrap text-[16px] cursor-pointer text-[#0D7A52]'>
                             My Cart
                         </div>
-
                     </div>
                 </div>
 
@@ -129,34 +127,52 @@ const Navbar = () => {
                 text-[16px] bg-white h-[50px] w-full uppercase 
                 px-4 pr-12 tracking-wider"
                                 type="text"
-                                placeholder="Enter Your Keyword...."
-                            />
+                                placeholder="Enter Your Keyword...." />
                             <button className="w-[45px] h-[45px] flex justify-center items-center rounded-full 
                 bg-[#F09300] absolute right-[3px] top-1/2 -translate-y-1/2">
                                 <FiSearch className="text-white text-[20px]" />
                             </button>
                         </div>
 
+                        {/* Contact  */}
+                        <div className="relative group inline-block w-full md:w-auto">
 
-                        {/* CONTACT BOX */}
-                        <button className="
-            rounded-full text-black bg-white 
-            h-[50px] md:h-[50px] 
-            w-full md:w-[240px] 
-            px-2 flex gap-4 items-center text-[14px] md:text-[13px]">
+                            <button
+                                className="rounded-full text-black bg-white 
+        h-[50px] md:h-[50px] w-full md:w-[240px] 
+        px-2 flex gap-4 items-center text-[14px] md:text-[13px]"
+                            >
+                                <PiPhoneOutgoingFill className="text-[#0D7A52]" size={30} />
 
-                            <PiPhoneOutgoingFill className="text-[#0D7A52]" size={30} />
+                                <div className="leading-tight">
+                                    <p className="tracking-wider text-gray-400">Call us now:</p>
+                                    <p className="text-[#0D7A52] font-extrabold">031-5338-5735</p>
+                                </div>
+                            </button>
 
-                            <div className="leading-tight">
-                                <p className="tracking-wider text-gray-400">Call us now:</p>
-                                <p className="text-[#0D7A52] font-extrabold">031-5338-5735</p>
+                            {/* ==== HOVER DROPDOWN BOX ==== */}
+                            <div
+                                className="absolute left-0 top-19 bg-white invisible opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:visible z-50 w-65 py-2 rounded-2xl px-1"
+                            >
+                                {/* SEATTLE */}
+                                <div className="p-4 cursor-pointer border-b">
+                                    <h3 className="font-bold text-xl text-gray-400">SEATTLE :</h3>
+                                    <p className="font-extrabold text-lg text-[#0D7A52]">084-2525-6868</p>
+                                    <p className="text-gray-600 text-sm">greenbee@domain.com</p>
+                                    <p className="text-gray-600 text-sm">PO Box 1622 Vissaosang Street West</p>
+                                </div>
+
+                                {/* CHICAGO */}
+                                <div className="p-4 cursor-pointer">
+                                    <h3 className="font-bold text-xl text-gray-400">CHICAGO :</h3>
+                                    <p className="font-bold text-lg text-[#0D7A52]">084-2525-6868</p>
+                                    <p className="text-gray-600 text-sm">sonata@domain.com</p>
+                                    <p className="text-gray-600 text-sm">PO Box 1652 Vissaosang Street West</p>
+                                </div>
                             </div>
-
-                        </button>
-
+                        </div>
                     </div>
                 </div>
-
             </section>
 
             {/* Small Navbar - Mobile Screens */}
@@ -178,9 +194,7 @@ const Navbar = () => {
 
                 {/* <!-- drawer component --> */}
                 <div className={`fixed top-0 left-0 z-50 w-[300px] h-screen overflow-y-auto bg-gray-100 border-e border-default transition-transform duration-300
-                    ${openDrawer ? "translate-x-0" : "-translate-x-full"}`}
-                >
-
+                    ${openDrawer ? "translate-x-0" : "-translate-x-full"}`}>
                     <div className="py-5 overflow-y-auto">
                         <ul className="space-y-2 font-medium">
 
@@ -188,8 +202,7 @@ const Navbar = () => {
                                 {/* MAIN ROW */}
                                 <div
                                     className="flex justify-between items-start gap-3 px-4 rounded-t-2xl hover:bg-[#EAF2EF] cursor-pointer"
-                                    onClick={() => setOpenFruits(!openFruits)}
-                                >
+                                    onClick={() => setOpenFruits(!openFruits)}>
                                     <img
                                         src="https://greenbee-2.myshopify.com/cdn/shop/files/v-1_50x.png?v=1613769214"
                                         alt=""
@@ -199,8 +212,7 @@ const Navbar = () => {
                                             Fresh Fruits
                                             <IoMdArrowDropright
                                                 className={`text-gray-500 transform transition-transform duration-300 ${openFruits ? "rotate-90 text-green-700" : ""
-                                                    }`}
-                                            />
+                                                    }`} />
                                         </p>
                                         <p className="text-[14px] text-gray-500">
                                             Apple, orange, banana, watermelon, pineapple, grapes...
@@ -211,8 +223,7 @@ const Navbar = () => {
                                 {/* DROPDOWN CONTENT */}
                                 <div
                                     className={`overflow-hidden transition-all duration-500 pl-5 mt-1 ${openFruits ? "max-h-[700px]" : "max-h-0"
-                                        }`}
-                                >
+                                        }`}>
                                     <h2 className=' text-2xl text-[#78B144] my-2 uppercase'>By category</h2>
                                     <ul className="space-y-1 text-gray-500">
                                         <li className="hover:text-green-700 text-sm tracking-wide">Berries</li>
@@ -246,19 +257,16 @@ const Navbar = () => {
                                 {/* MAIN ROW */}
                                 <div
                                     className="flex justify-between items-start gap-3 px-4 hover:bg-sky-50 cursor-pointer"
-                                    onClick={() => setOpenVegetables(!openVegetables)}
-                                >
+                                    onClick={() => setOpenVegetables(!openVegetables)}>
                                     <img
                                         src="https://greenbee-2.myshopify.com/cdn/shop/files/v-2_50x.png?v=1613769214"
-                                        alt=""
-                                    />
+                                        alt="" />
                                     <div className="flex-1">
                                         <p className="text-lg flex justify-between items-center w-full">
                                             Vegetables
                                             <IoMdArrowDropright
                                                 className={`text-gray-500 transform transition-transform duration-300 ${openVegetables ? "rotate-90 text-green-700" : ""
-                                                    }`}
-                                            />
+                                                    }`} />
                                         </p>
                                         <p className="text-[14px] text-gray-500">
                                             Cabbage, Onion, Kale, Parsley, Garlic, Asparagus...
@@ -303,8 +311,7 @@ const Navbar = () => {
                                 {/* MAIN ROW */}
                                 <div
                                     className="flex justify-between items-start gap-3 px-4 hover:bg-sky-50 cursor-pointer"
-                                    onClick={() => setOpenFreshJuice(!openFreshJuice)}
-                                >
+                                    onClick={() => setOpenFreshJuice(!openFreshJuice)}>
                                     <img
                                         src="https://greenbee-2.myshopify.com/cdn/shop/files/v-3_50x.png?v=1613769214"
                                         alt=""
@@ -314,8 +321,7 @@ const Navbar = () => {
                                             Fresh Juices
                                             <IoMdArrowDropright
                                                 className={`text-gray-500 transform transition-transform duration-300 ${openFreshJuice ? "rotate-90 text-green-700" : ""
-                                                    }`}
-                                            />
+                                                    }`} />
                                         </p>
                                         <p className="text-[14px] text-gray-500">
                                             Apple, Orange, Watermelon, Banana Pineapple, Grapes...
@@ -326,8 +332,7 @@ const Navbar = () => {
                                 {/* DROPDOWN CONTENT */}
                                 <div
                                     className={`overflow-hidden transition-all duration-500 flex justify-center mt-1 ${openFreshJuice ? "max-h-[600px]" : "max-h-0"
-                                        }`}
-                                >
+                                        }`}>
 
                                     <ul className="space-y-1 mt-3 text-gray-500">
                                         <li className="hover:text-green-700 text-sm text-start tracking-wide">Lemonade</li>
@@ -340,8 +345,6 @@ const Navbar = () => {
                                         <li className="hover:text-green-700 text-sm text-start tracking-wide">Strawberry Juice</li>
                                         <li className="hover:text-green-700 text-sm text-start tracking-wide">White Grape Juice</li>
                                     </ul>
-
-
                                 </div>
                             </li>
                             <hr />
@@ -375,7 +378,6 @@ const Navbar = () => {
                                     </div>
                                 </div>
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -386,8 +388,7 @@ const Navbar = () => {
                             width={80}
                             className="sm:w-20 w-16"
                             src="https://greenbee-2.myshopify.com/cdn/shop/files/logo_200x.png?v=1613769207"
-                            alt=""
-                        />
+                            alt="" />
                     </a>
                 </div>
                 <div className="relative flex-1 mx-2">
@@ -399,7 +400,6 @@ const Navbar = () => {
                     <FiSearch className="text-green-700 absolute right-3 top-1/2 -translate-y-1/2 text-[20px]" />
                 </div>
 
-
                 {/* RIGHT MENU BUTTON */}
                 <button onClick={() => setIsRightOpen(true)}>
                     <HiOutlineMenu size={20} />
@@ -407,15 +407,12 @@ const Navbar = () => {
 
                 <div
                     className={`fixed top-0 right-0 z-50 w-[300px] h-screen bg-white shadow-xl transition-transform duration-300
-                ${isRightOpen ? "translate-x-0" : "translate-x-full"}`}
-                >
+                ${isRightOpen ? "translate-x-0" : "translate-x-full"}`}>
                     <div className="p-4 border-b">
-
                         <button className='flex justify-center w-full' onClick={() => setIsRightOpen(false)}><IoIosClose size={30} /></button>
                     </div>
 
                     <div className="px-6 py-10 flex justify-between items-center flex-col gap-5">
-
                         <div className="flex flex-col w-full">
 
                             {/* HOME Row */}
@@ -447,7 +444,6 @@ const Navbar = () => {
                                     <li className="hover:text-green-700 text-sm">Homepage 4</li>
                                 </ul>
                             </div>
-
                         </div>
 
                         <div className="flex flex-col w-full">
@@ -480,16 +476,13 @@ const Navbar = () => {
                                     <li className="text-sm hover:text-green-700">Color Variant Style</li>
                                 </ul>
                             </div>
-
                         </div>
 
                         <div className="flex flex-col w-full">
-
                             {/* CATEGORIES Row */}
                             <div
                                 className="flex justify-between items-center w-full group cursor-pointer"
-                                onClick={() => setOpenCategories(!openCategories)}
-                            >
+                                onClick={() => setOpenCategories(!openCategories)}>
                                 <p className="hover:text-green-700 relative">
                                     CATEGORIES
                                     <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-green-700 transition-all duration-300 group-hover:w-full"></span>
@@ -514,16 +507,13 @@ const Navbar = () => {
                                     <li className="hover:text-green-700 text-sm">Full Width Layout</li>
                                 </ul>
                             </div>
-
                         </div>
-
                         <div className="flex flex-col w-full">
 
                             {/* PAGES Row */}
                             <div
                                 className="flex justify-between items-center w-full group cursor-pointer"
-                                onClick={() => setOpenPages(!openPages)}
-                            >
+                                onClick={() => setOpenPages(!openPages)}>
                                 <p className="hover:text-green-700 relative">
                                     PAGES
                                     <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-green-700 transition-all duration-300 group-hover:w-full"></span>
@@ -552,7 +542,6 @@ const Navbar = () => {
                                     <li className="hover:text-green-700 text-sm">404 Error Page</li>
                                 </ul>
                             </div>
-
                         </div>
 
                         <div className="flex flex-col w-full">
@@ -560,8 +549,7 @@ const Navbar = () => {
                             {/* BLOG Row */}
                             <div
                                 className="flex justify-between items-center w-full group cursor-pointer"
-                                onClick={() => setOpenBlog(!openBlog)}
-                            >
+                                onClick={() => setOpenBlog(!openBlog)}>
                                 <p className="hover:text-green-700 relative">
                                     BLOG
                                     <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-green-700 transition-all duration-300 group-hover:w-full"></span>
@@ -586,19 +574,15 @@ const Navbar = () => {
                                     <li className="hover:text-green-700 text-sm">Blog Categories</li>
                                 </ul>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
-
                 {isRightOpen && (
                     <div
                         className="fixed inset-0 bg-black bg-opacity-30 z-40"
                         onClick={() => setIsRightOpen(false)}
                     ></div>
                 )}
-
             </div>
         </>
     )

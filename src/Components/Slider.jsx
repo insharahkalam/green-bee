@@ -13,7 +13,6 @@ const Slider = () => {
           </div>
 
           <div className='w-full min-[1200px]:w-auto min-[1200px]:flex-1'>
-
             <div id="default-carousel" className="relative w-full" data-carousel="slide">
               <div
                 className="relative 
@@ -51,7 +50,6 @@ const Slider = () => {
                     alt=""
                   />
                 </div>
-
               </div>
 
               {/* INDICATORS */}
